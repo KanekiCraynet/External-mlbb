@@ -125,7 +125,7 @@ void ShowMenu()
 		loadBattleData(battleData);
 		bFullChecked = true;
 	}
-	std::string FULLTITLE = std::string(OBFUSCATE("SENSEI")) + std::string(" | ") + std::string("LITE 1.0") + std::string(" ") + std::string(ABI);
+	std::string FULLTITLE = std::string(OBFUSCATE("AKIRA")) + std::string(" | ") + std::string("SIMPLE 2.1") + std::string(" ") + std::string(ABI);
     if (!ImGui::Begin(FULLTITLE.c_str(), 0, window_flags))
     {
         ImGui::End();
@@ -188,7 +188,7 @@ void ShowMenu()
                     ImGui::BeginGroupPanel("Jungle ESP", ImVec2(-1.0f, 0.0f));
                     {
                         ImGui::Checkbox("ESP Round", &Feature.ESPMRound);
-						//ImGui::SameLine();
+			//ImGui::SameLine();
                         //ImGui::Checkbox("ESP Health", &Feature.ESPMHealth);
                         ImGui::Spacing();
                     }
@@ -196,7 +196,7 @@ void ShowMenu()
 
                     ImGui::BeginGroupPanel("Info ESP", ImVec2(-1.0f, 0.0f));
                     {
-						ImGui::Checkbox("Skill CD", &Feature.ESPSkillCD);
+			ImGui::Checkbox("Skill CD", &Feature.ESPSkillCD);
                         ImGui::Checkbox("Spell CD", &Feature.ESPSpellCD);
                         //ImGui::Checkbox("Show Hero Alert", &Feature.ESPAlert);
                         ImGui::Spacing();
@@ -204,8 +204,7 @@ void ShowMenu()
                     ImGui::EndGroupPanel();
                 }
                 ImGui::EndGroup();
-				
-				ImGui::BeginGroupPanel("Additional", ImVec2(-1.0f, 0.0f));
+		    ImGui::BeginGroupPanel("Additional", ImVec2(-1.0f, 0.0f));
                 {
                     ImGui::Text("Drone View:");
                     ImGui::SliderFloat("##DroneView", &SetFieldOfView, 0, 30, "%.1f");
@@ -216,7 +215,7 @@ void ShowMenu()
                 ImGui::EndTabItem();
             }
             if (ImGui::BeginTabItem("Room Info")) {
-				if (bFullChecked) RoomInfoList();
+		    if (bFullChecked) RoomInfoList();
                 ImGui::TextColored(ImVec4(0.0f, 0.8f, 1.0f, 1.0f), "Team");
                 if (ImGui::BeginTable("##Team", 7, ImGuiTableFlags_BordersOuter | ImGuiTableFlags_BordersInner)) {
                     ImGui::TableSetupColumn("Name");
@@ -297,7 +296,7 @@ void ShowMenu()
                 }
                 ImGui::EndTabItem();
             }
-			//if (ImGui::BeginTabItem("Minimap Menu")) {
+		//if (ImGui::BeginTabItem("Minimap Menu")) {
                 //ImGui::Checkbox("Minimap Icon", &Feature.MinimapIcon);
                // if (!Feature.MinimapIcon) ImGui::BeginDisabled();
                 //ImGui::SameLine();
