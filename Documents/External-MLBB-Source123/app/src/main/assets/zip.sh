@@ -1,0 +1,1 @@
+zip -r -e -P makanbang assets.zip armeabi-v7a arm64-v8a
