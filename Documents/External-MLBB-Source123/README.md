@@ -1,4 +1,4 @@
-# ImGui Unity Template by DivaArvian
+# ImGui Unity Template by KanekiCraynet
 > 2022/07/31 14:32: Initial Commit (with imgui v1.85).
 
 > 2022/07/31 19:32: Update support with imgui v1.88.
